@@ -14,3 +14,9 @@ return (
    </div>
 )
 // todo input > add props
+// todo input > call the function
+<button onClick={() =>{
+   props.addList(inputText)
+   setInputText('')
+}
+   }
