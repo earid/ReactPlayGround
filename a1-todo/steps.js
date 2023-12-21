@@ -8,3 +8,8 @@ const [inputText, setInputText] = useState('');
     }
 // add props in child component
 // spread oparetor to add in data in array
+return (
+   <div> 
+   <TodoInput addList={addList} />
+   </div>
+)
