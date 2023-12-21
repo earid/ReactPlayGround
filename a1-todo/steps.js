@@ -17,6 +17,6 @@ return (
 // todo input > call the function
 <button onClick={() =>{
    props.addList(inputText)
-   setInputText('')
+   setInputText('') // to empty the input box, add value={inputText}
 }
    }
