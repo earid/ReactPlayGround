@@ -10,6 +10,6 @@ const [inputText, setInputText] = useState('');
 // spread oparetor to add in data in array
 return (
    <div> 
-   <TodoInput addList={addList} />
+      <TodoInput addList={addList} />
    </div>
 )
