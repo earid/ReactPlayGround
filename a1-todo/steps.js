@@ -20,3 +20,5 @@ return (
    setInputText('') // to empty the input box, add value={inputText}
 }
    }
+// inputlist >> add props
+<li> {props.item} <btn> </btn><li>
