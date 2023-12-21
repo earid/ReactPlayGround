@@ -13,3 +13,4 @@ return (
       <TodoInput addList={addList} />
    </div>
 )
+// todo input > add props
