@@ -28,5 +28,6 @@ return (
                     )
                 })}
 
-// inputlist >> add props
+// todolist >> add props
 <li> {props.item} <btn> </btn><li>
+
