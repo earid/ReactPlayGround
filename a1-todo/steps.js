@@ -22,7 +22,7 @@ return (
    }
 // inputlist >> add props
 <li> {props.item} <btn> </btn><li>
-// add 
+// app
 {listToDo.map((listItem, i) => {
                     return (
                         <TodoList key={i} item={listItem} />
