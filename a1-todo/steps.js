@@ -45,4 +45,9 @@ return (
                             props.deleteItem(props.item)
                         }
                     }></i>
-                </span>
+       </span>
+// app
+  let addList = (inputText) => {
+        if (inputText !== '')
+            setListToDo([...listToDo, inputText])
+    }
