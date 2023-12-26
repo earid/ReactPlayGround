@@ -30,4 +30,19 @@ return (
 
 // todolist >> add props
 <li> {props.item} <btn> </btn><li>
-
+// app
+    const deleteItem = (key) => {
+        let newListToDo = [...listToDo];
+        newListToDo.splice(key, 1);
+        setListToDo([...newListToDo])
+    }
+       
+ <TodoList key={i} index={i} item={listItem} deleteItem={deleteItem} />
+// Todo list
+        <span className="icons">
+                    <i className="fa-solid fa-trash-can icon-delete" onClick={
+                        () => {
+                            props.deleteItem(props.item)
+                        }
+                    }></i>
+                </span>
