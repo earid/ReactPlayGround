@@ -46,8 +46,17 @@ return (
                         }
                     }></i>
        </span>
-// app
+// app , blocking empty input
   let addList = (inputText) => {
         if (inputText !== '')
             setListToDo([...listToDo, inputText])
     }
+
+// TodoInput , 
+const handleEnterPress = (e) => {
+        if (e.keyCode === 13) {
+            props.addList(inputText)
+            setInputText("")
+        }
+    }
+   <input  onKeyDown={handleEnterPress} />
