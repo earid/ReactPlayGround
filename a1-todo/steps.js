@@ -8,18 +8,19 @@ const [inputText, setInputText] = useState('');
     }
 //Add props in the child component
 // spread operator to add data in an array
-return (
-   <div> 
-      <TodoInput addList={addList} />
-   </div>
-)
-// todo input > add props
+
 // todo input > call the function
 <button onClick={() =>{
    props.addList(inputText)
    setInputText('') // to empty the input box, add value={inputText}
 }
    }
+return (
+   <div> 
+      <TodoInput addList={addList} />
+   </div>
+)
+// todo input > add props
 
 // app
 {listToDo.map((listItem, i) => {
