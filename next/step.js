@@ -58,13 +58,17 @@ const NavLink = ({ item }) => {
 // 4) mobile Navigation
 
 
+
 const Links = () => {
   const [open, setOpen] = useState(false);
+
+  const session = true;
+  const isAdmin = true;
 
   return (
     <div className={styles.container}>
       <div className={styles.links}>
-      // code for nav
+       // Nav code
       </div>
       <button
         className={styles.menuButton}
@@ -79,4 +83,7 @@ const Links = () => {
           ))}
         </div>
       )}
+    </div>
+  );
+};
 
