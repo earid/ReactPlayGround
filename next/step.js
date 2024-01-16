@@ -58,7 +58,7 @@ const NavLink = ({ item }) => {
 // 4) mobile Navigation
 
 
-const Links = ({ session }) => {
+const Links = () => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -68,8 +68,6 @@ const Links = ({ session }) => {
       </div>
       <button
         className={styles.menuButton}
-  
-        height={30}
         onClick={() => setOpen((prev) => !prev)}
       >
         Menu
