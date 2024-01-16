@@ -1,6 +1,6 @@
 npx create-next-app@latest
   
-1) menu initial
+// 1) menu initial
 const Links = () => {
   const links = [
     { title: "Home", path: "/" },
@@ -19,7 +19,7 @@ const Links = () => {
     </div>
   );
 };
-2) menu props 
+// 2) menu props 
 import { usePathname } from "next/navigation";
 
 const NavLink = ({ item }) => {
@@ -55,3 +55,30 @@ const NavLink = ({ item }) => {
       )}
     </div>
   );
+// 4) mobile Navigation
+
+
+const Links = ({ session }) => {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <div className={styles.container}>
+      <div className={styles.links}>
+      // code for nav
+      </div>
+      <button
+        className={styles.menuButton}
+  
+        height={30}
+        onClick={() => setOpen((prev) => !prev)}
+      >
+        Menu
+      </button>
+      {open && (
+        <div className={styles.mobileLinks}>
+          {links.map((link) => (
+            <NavLink item={link} key={link.title} />
+          ))}
+        </div>
+      )}
+
